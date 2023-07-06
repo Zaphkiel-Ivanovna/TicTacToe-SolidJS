@@ -1,0 +1,47 @@
+body {
+  background-color: #343a40;
+  color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+h1 {
+  color: #f8f9fa;
+}
+
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+button:active {
+  background-color: #ffffff;
+  color: #343a40;
+  border-color: #343a40;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #343a40;
+  border-color: #343a40;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+h2 {
+  color: #f8f9fa;
+}
