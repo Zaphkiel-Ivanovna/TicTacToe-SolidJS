@@ -1,28 +1,59 @@
-## Usage
+# TicTacToe en SolidJS et Bootstrap 🎮⭕❌
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+Bienvenue sur le projet TicTacToe réalisé avec SolidJS et Bootstrap. Il s'agit d'un projet d'école 🎓 donc il n'est pas destiné à être utilisé par la communauté.
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## Installation 💻
 
-## Available Scripts
+Le projet utilise [pnpm](https://pnpm.io/) comme gestionnaire de paquets. Pour installer pnpm, utilisez la commande suivante:
 
-In the project directory, you can run:
+\```bash
+npm install -g pnpm
+\```
 
-### `npm run dev`
+Une fois pnpm installé, vous pouvez installer les dépendances du projet avec:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+\```bash
+pnpm install
+\```
 
-### `npm run build`
+## Développement 🚀
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+Le projet utilise [Vite](https://vitejs.dev/) pour un développement efficace et moderne. Pour lancer le projet en mode développement, utilisez:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+\```bash
+pnpm run dev
+\```
 
-## Deployment
+Vous pouvez maintenant accéder au projet à `http://localhost:5000`.
 
-Learn more about deploying your application with the [documentations](https://vitejs.dev/guide/static-deploy.html)
+## Compilation 🏗️
+
+Pour construire le projet pour la production, utilisez:
+
+\```bash
+pnpm run build
+\```
+
+## Prévisualisation 🌐
+
+Vous pouvez prévisualiser le projet de production en utilisant:
+
+\```bash
+pnpm run preview
+\```
+
+## Linting 🔍
+
+Le projet utilise [ESLint](https://eslint.org/) pour maintenir un code propre et cohérent. Pour lancer ESLint, utilisez:
+
+\```bash
+pnpm run lint
+\```
+
+## Licence 📃
+
+Ce projet est utilisé uniquement à des fins éducatives et n'est pas destiné à être utilisé par la communauté. 
+
+N'hésitez pas à explorer le code et à l'utiliser pour votre apprentissage! 😊
+
+Bon codage! 💻🚀
