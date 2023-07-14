@@ -45,3 +45,15 @@ button:disabled {
 h2 {
   color: #f8f9fa;
 }
+
+.status.victory {
+  animation-name: victory;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes victory {
+  0% {color: red;}
+  50% {color: yellow;}
+  100% {color: green;}
+}

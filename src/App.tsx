@@ -8,6 +8,12 @@ const TicTacToe: Component = () => {
   // Créez l'état du jeu (en cours, victoire, égalité)
   const [status, setStatus] = createSignal<string>("En cours");
 
+  const resetGame = () => {
+    setBoard(Array(3).fill(Array(3).fill(null)));
+    setCurrentPlayer("X");
+    setStatus("En cours");
+  };
+
   const winningLines = [
     [[0, 0], [0, 1], [0, 2]],
     [[1, 0], [1, 1], [1, 2]],
@@ -73,7 +79,11 @@ const TicTacToe: Component = () => {
         ))}
       </div>
       <div class="text-center mt-4">
-        <h2>Statut : {status()}</h2>
+        <h2 class={`status ${status() === "Victoire: X" || status() === "Victoire: O" ? "victory" : ""}`}>Statut : {status()}</h2>
+        <h2>Joueur devant jouer : {currentPlayer()}</h2>
+        <button class="btn btn-secondary mt-3" onClick={resetGame}>
+          Réinitialiser le jeu
+        </button>
       </div>
     </div>
   );
